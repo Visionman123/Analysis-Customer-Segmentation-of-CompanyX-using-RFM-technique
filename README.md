@@ -130,20 +130,17 @@ The culmination of the RFM analysis results in distinctive customer segments, ea
 
 **Reference Date (R):**
 
-- Choose the reference date as 12/1/2013.
-- Calculate the Recency (R) for each customer based on the maximum **`other_date`** of each customer.
+- Choose the reference date as maximum value of OrderDate column.
+- Calculate the Recency (R) for each customer based on the **`reference date`** of each customer.
 - Categorize customers based on Recency:
-    - If *R* ≤ 60, assign *R* = 3.
-    - If 60 ≤ *R* ≤ 120, assign *R* = 2.
-    - If *R* > 120, assign *R* = 1.
+    - From min value to max value, divide the data into 3 equal sections then rated 1,2,3
 
 **Frequency (F):**
 
 - Determine Frequency (F) based on the **`lineNumber`** (number of units/items/products purchased in a transaction).
 - Categorize customers based on Frequency:
-    - If *F* ≤ 3, assign *F* = 3.
-    - If 3 ≤ *F* ≤ 6, assign *F* = 2.
-    - If *F* > 6, assign *F* = 1.
+    - From min value to max value, divide the data into 3 equal sections then rated 1,2,3
+
 
 **Monetary (M):**
 
@@ -155,15 +152,16 @@ The culmination of the RFM analysis results in distinctive customer segments, ea
 
 After calculating R, F, and M, combine these values to create segments. Your segments based on RFM values are:
 
-| Segment | RFM | Description |
-| --- | --- | --- |
-| Best Customer | (333) | Recently bought a lot, buys often, and spends the most. |
-| Loyal Customer | (1X1) | Buys very often. |
-| Big Spender Customer | (XX3) | Spends the most, regardless of how often they buy. |
-| Almost Lost | (233) | Hasn't bought recently, but used to buy frequently and spent the most. |
-| Lost Customer | (133) | No recent purchases, but used to buy frequently and spent the most. |
-| Lost Cheap Customer | (111) | Last purchase was a long time ago, buys infrequently, and spends little. |
-| Others |  | 11 other cases |
+| Segment               | RFM                                      | Description |
+|-----------------------|------------------------------------------| --- |
+| Best Customers        | (333)                                    | Recently bought a lot, buys often, and spends the most. |
+| Loyal Customers       | (X3X)                                    | Buy most frequently. |
+| Big Spenders          | (XX3)                                    | Spends the most, regardless of how often they buy. |
+| Almost Lost Customers | (122, 123, 132, 133)                     | Haven’t purchased recently but purchased more frequently and spent a medium or large amount. |
+| Lost Customers        | (111, 112, 121, 131, 113)                | Haven’t purchased recently but spent a small or medium amount. |
+| New Customers  | (311, 211, 321, 312, 221, 212, 213, 211) | Purchased recently but there is no frequency record. |
+|Potential Loyal Customers| (233, 222, 223, 322, 323, 332)|Close to Best Customers (contain 1 or 2 fields = 2 in RFM)|
+| Others                |                                          |other cases |
 
 ### **Business Decision Support:**
 
