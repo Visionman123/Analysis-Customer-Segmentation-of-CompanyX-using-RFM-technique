@@ -89,16 +89,16 @@ Embarking on the ETL journey for our Business Intelligence initiative, we delve 
 ![1](image/All_Dimension_ETL.PNG.png)
 This image appears to be a data flow diagram in a software interface, likely related to database management or data processing. It shows various entities like “SCD DimProduct”, “SCD DimSalesTerritory”, and others connected through green lines indicating the flow of data or relationships between them. The image background is dark, and the elements are highlighted making them easily visible. At the top, there’s a toolbar with options like “Control Flow”, “Data Flow”, “Parameters”, and others. Below the toolbar, there’s a tab labeled “Update Dim…a.tstx [Design]” indicating that this is a design view of some task or process. There are six rectangular entities with icons and labels such as “SCD DimProduct”, “SCD DimSalesTerritory”, “SCD DimDate”, “SCD DimCustomer”, “SCD DimRFM”, and “FactSalesOrder”. Each entity has an icon on its left; four have similar icons suggesting they might be of similar types or categories, while two have distinct icons. Green lines connect these entities indicating some form of relationship or data flow between them.
 
-# Dim_costumer 
+## Dim_costumer 
 ![](image/Dim_Customer_ETL.PNG.png)
 The image shows a graphical user interface of an ETL tool with various components connected to depict the flow of data processing. The title bar at the top indicates that this is the design view of “Update_Dim…a.tskx”. There are two main sources: “OLE Person Source” and “OLE Customer Source”, both having icons representing database tables. These sources are connected to “Sort 1” and another “Sort”, respectively, represented by icons with upward arrows. A “Merge Join” component combines these sorted outputs into one stream. The merged data then flows into a “Derived Column” component before being split into two separate paths: one path leads to “Historical Attribute Inserts Output” and “Changing Attribute Updates Output”, which are part of the “Slowly Changing Dimension” component, while the other path leads directly to another “Derived Column 1” component. Both paths converge at the “Union All” component, represented by an icon with combined arrows. Finally, the unified data stream is directed towards an “Insert Destination” component for storage or further processing
-# Dim Date
+## Dim Date
 ![](image/Dim_Date.PNG.png)
 This image appears to be a screenshot of a data flow diagram in a software development environment, specifically for ETL (Extract, Transform, Load) processes. The image shows the “Update_Dim_a…tsx [Design]*” tab open in a software development tool. There are five main components connected by arrows indicating the flow of data: “OLE OrderDate Source”, “Slowly Changing Dimension”, “New Output”, “Changing Attribute Updates Output”, and “OLE DB Command”. The interface has tabs for “Control Flow”, “Data Flow”, “Parameters”, and “Event Handlers” at the top. The background is dark, and the text and icons are in lighter colors making them stand out. Each component is represented by a rectangular shape with rounded corners containing icons and text labels to identify their functions. Arrows connecting these components indicate the direction of data flow from one process to another
-# Dim Product
+## Dim Product
 ![](image/Dim_Product_ETL.PNG.png)
 It outlines the process of extracting data from a source, transforming it, and loading it into a destination. The diagram consists of several boxes and arrows that indicate the direction of data flow between different stages. The first box is labeled “CompanyX Product Source”, indicating the source of the data extraction. Data flows into the “Slowly Changing Dimension” box where transformations occur. There are two outputs from this transformation: one flows into “Historical Attribute Inserts Output” and another to “Derived Column”. The “Derived Column” connects to an “OLE DB Command”, which then connects to “Union All”. Another output labeled as “New Output” emerges from the Slowly Changing Dimension and directly connects to “Insert Destination”. There is also a connection from “Union All” to “Derived Column 1”, which in turn connects to “Insert Destination”.
-# Dim SalesTerritory 
+## Dim SalesTerritory 
 ![](image/Dim_SalesTerritory_ETL.PNG.png)
 The process begins with extracting data from two sources: “OLE SalesTerritory Source” and “OLE DB Source.” These sources are then sorted individually before being merged and joined. The merged data flows into a slowly changing dimension task and an OLE DB command task simultaneously. The slowly changing dimension task outputs historical attribute inserts and new outputs that are transformed through derived columns before being united by a “Union All” operation. Finally, the transformed data is loaded into the “Insert Destination.”
 
@@ -172,9 +172,6 @@ Utilize these segments to make informed business decisions.
 - Adjust pricing or promotions for Big Spender customers.
 - Monitor and analyze the impact of these strategies on customer behavior over time.
 
-## Forecast customer trends or predict future sales.
-(Chưa có)
-
 # 6. BI dashboard
 In this pivotal step of our Business Intelligence journey, we have harnessed the power of Tableau to construct a dynamic and insightful BI dashboard. Tableau serves as our canvas, empowering us to seamlessly visualize and distill complex datasets into a coherent and interactive representation. The dashboard we've meticulously crafted encapsulates a multitude of essential metrics, providing a comprehensive snapshot of our business performance from 2011 to 2014.
 
@@ -188,10 +185,7 @@ In a dedicated section on customer segmentation, our dashboard employs a strateg
 
 In wrapping up, our user-friendly dashboard for customer and segmentation analysis presents a visually compelling and dynamic tool for informed decision-making. The inclusion of charts, graphs, and maps delivers insights into customer demographics, buying patterns, and segment distributions. For a firsthand experience, explore the interactive Tableau platform via this [**Customer Segmentation Dashboard](https://public.tableau.com/app/profile/nam.nguyen7732/viz/CustomerSegmentationDashboard-RFMAnalysis/Dashboard1?publish=yes).** This dashboard not only simplifies data comprehension but empowers users to customize analyses, showcasing the practicality of our strategic use of BI platforms. It stands as a testament to our commitment to data-driven excellence in customer analysis.
 
-# 7. One use-case to show how your analysis supports business decision making 
-(chưa có)
-
-# 8. I****nsights, Challenges, and Recommendations****
+# 7. I****nsights, Challenges, and Recommendations****
 
 **Insights:**
 
@@ -212,7 +206,7 @@ To address challenges and enhance future analyses, we propose:
 
 This phase serves as a foundation for subsequent BI endeavors, offering not only insights into customer dynamics but also valuable lessons for refining our analytical strategies. The fusion of data-driven insights and adaptive strategies positions us favorably for future challenges in the dynamic landscape of customer analysis and segmentation.
 
-# 9. Business model for analysis
+# 8. Business model for analysis
 ![](image/Business_Model.png)
 The proposed business model strategically outlines key elements for the success of our Customer Analysis and Segmentation project. In establishing robust operations, key partnerships will be forged with prominent data providers, analytics tools, and industry experts. These collaborations are pivotal to enhancing data quality and analysis capabilities, ensuring the delivery of comprehensive insights.
 
@@ -225,6 +219,14 @@ Our identified customer segments encompass businesses aiming to enhance their un
 The cost structure is carefully delineated, encompassing investments in data procurement, allocation of resources for skilled data scientists and analysts, and the maintenance and upgrading of analytics tools and platforms. Key metrics for success include tracking user engagement with dashboards, ensuring data accuracy through rigorous monitoring, and measuring overall client satisfaction through feedback mechanisms.
 
 Looking towards the future, our business model emphasizes continuous evolution. This involves integrating emerging technologies, staying abreast of data privacy regulations, and expanding our services to meet evolving market demands. The sustainability of our revenue structure is underscored by subscription models and consulting fees, highlighting our commitment to delivering actionable insights, fostering lasting relationships, and adapting to ensure client success in a dynamic business landscape.
+
+# Member task management
+| Members             | Role                    | Task                                                    |
+|---------------------|-------------------------|---------------------------------------------------------|
+| Nguyễn Hoàng Nam   | Leader                  | Build dashboard, Report, Presentation                    |
+| Võ Khánh Minh      | Database Administrator  | Design Data warehouse schema, Build ETL, Data Analysis by Python |
+| Trần Quang Minh    | Data Analyst            | Design Data warehouse schema, Data Analysis by Python, Define RFM Analysis |
+
 
 # Reference 
 **Business Model:** [Canva Business Model](https://www.canva.com/design/DAF024BkWiI/b4LEMFsjSPxg9Yr_jKT7_A/edit?utm_content=DAF024BkWiI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
