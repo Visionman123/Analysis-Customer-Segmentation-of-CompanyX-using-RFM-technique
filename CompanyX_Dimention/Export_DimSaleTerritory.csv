@@ -1,0 +1,12 @@
+SalesTerritoryKey,TerritoryID,Region,Country,ModifiedDate,ValueUntil
+1,9,Australia,Australia,2024-01-08 22:25:31,
+2,6,Canada,Canada,2024-01-08 22:25:31,
+3,8,Germany,Germany,2024-01-08 22:25:31,
+4,7,France,France,2024-01-08 22:25:31,
+5,10,United Kingdom,United Kingdom,2024-01-08 22:25:31,
+6,11,London,United Kingdom,2024-01-08 22:25:31,
+7,1,Northwest,United States,2024-01-08 22:25:31,
+8,2,Northeast,United States,2024-01-08 22:25:31,
+9,3,Central,United States,2024-01-08 22:25:31,
+10,4,Southwest,United States,2024-01-08 22:25:31,
+11,5,Southeast,United States,2024-01-08 22:25:31,

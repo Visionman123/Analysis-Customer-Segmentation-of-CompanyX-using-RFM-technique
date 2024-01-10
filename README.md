@@ -229,3 +229,10 @@ The cost structure is carefully delineated, encompassing investments in data pro
 Looking towards the future, our business model emphasizes continuous evolution. This involves integrating emerging technologies, staying abreast of data privacy regulations, and expanding our services to meet evolving market demands. The sustainability of our revenue structure is underscored by subscription models and consulting fees, highlighting our commitment to delivering actionable insights, fostering lasting relationships, and adapting to ensure client success in a dynamic business landscape.
 
 # Reference 
+**Business Model:** [Canva Business Model](https://www.canva.com/design/DAF024BkWiI/b4LEMFsjSPxg9Yr_jKT7_A/edit?utm_content=DAF024BkWiI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+**Presentation:** [Canva Presentation](https://www.canva.com/design/DAF4-4Nu_u4/e1HzwBFVUWvm8Oh0uqK1jQ/view?utm_content=DAF4-4Nu_u4&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel)
+
+**BI Dashboard:** [Tableau BI Dashboard](https://public.tableau.com/app/profile/nam.nguyen7732/viz/CustomerSegmentationDashboard-RFMAnalysis/Dashboard1?publish=yes)
+
+**Database Diagram:** [dbdiagram.io Database Diagram](https://dbdiagram.io/d/658cea2689dea62799a648a8)
